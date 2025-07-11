@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --text-dark:#171717;
+    --text-light:#525252;
+    --extra-light:#a3a3a3;
+    --white:#ffffff;
+    --max-width: 1200px;
+    --header-font: "Merriweather", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+.section_container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 75px 15px;
+    position: relative;
+}
+
+.section_header {
+    margin-bottom: 15px;
+    font-size: 30px; 
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.section_description {
+    color: var(--text-light);
+    line-height: 25px;
+    text-align: center;
+}
+
+a {
+    color: var(--white);
+}
+
+.icon {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--text-dark);
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--text-dark);
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: var(--text-light);
+}
+
+.menu-img {
+    width: 100%;
+    display: flex;
+    position: relative;
+    max-width: 70px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    min-height: 600px;
+    background-image: url("assets/Peacock\ -\ Competition.jpg");
+    background-image: radical-gradient(rgba(255, 255, 255, 0), rgba(0,0,0,0));
+    background-position: center center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 0px 1000px rgba(0,0,0,0.4)
+}   
+
+.sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    gap: 25px;
+}
+
+
+nav {
+    position: fixed;
+    isolation: isolate;
+    top: 0;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    z-index: 9;
+}
+
+.nav_header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: var(--text-dark);
+}
+
+.nav_logo_img {
+    width: 100%;
+    display: flex;
+    max-width: 70px;
+}
+
+.nav_menu_icon {
+    font-size: 20px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--text-dark);
+    transform: translateY(-100%);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+
+.nav_links.open {
+    transform: translateY(0);
+}
+
+.nav_links .menu-img {
+    display: none;
+
+}
+
+.nav_links a {
+    padding-bottom: 5px;
+    font-weight: 500;
+    color: var(--white);
+    border-bottom: 2px solid transparent; 
+}
+
+.nav_links a:hover {
+    border-color: var(--white);
+
+}
+
+.about_container .section_description {
+    max-width: 900px;
+    margin-inline: auto; 
+    margin-bottom: 30px;
+}
+
+.about_container img {
+    max-width: 170px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+}
+
+@media (width > 768px){
+   .header {
+    min-height: 650px; 
+   }
+
+   nav {
+    padding: 30px 15px;
+    position: static;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+   .nav_header {
+    display: none;
+   }
+
+   .nav_links {
+    padding: 0;
+    width: 100%;
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+   }
+
+   .nav_links .nav_logo {
+    display: block;
+   }
+
+   .nav_links .nav_logo_img {
+    max-width: 150px;
+   }
+   
+    .portfolio_grid {
+    grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #logo_between {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sections {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #logo_between {
+        background-image: url("assets/camera\ 2.jpg");
+    }
+}
+
+@media (width > 1024px) {
+    .header {
+    min-height: 700px;
+    }
+
+    .portfolio_grid {
+    gap: 30px;
+    }
+}
+
+.portfolio-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: none;
+    padding: none;
+}
+
+.portfolio_grid {
+    margin-top: 30px;
+    display: grid;
+    gap: 15px;
+}
+
+.portfolio_card {
+    position: relative;
+    isolation: isolate; 
+    width: 100%;
+}
+
+.portfolio_card::after {
+    position: absolute; 
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px; 
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.portfolio_card:nth-child(1)::after {
+    content: "Fauna";
+}
+
+.portfolio_card:nth-child(2)::after {
+    content: "Landscapes";
+}
+
+.portfolio_card:nth-child(3)::after {
+    content: "Greenery";
+}
+
+.portfolio_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.portfolio_card:hover .portfolio_content {
+    opacity: 1;
+    background-size: auto;
+}
+
+.service {
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+    url("assets/Peacock\ -\ Competition.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service_container .section_header {
+    color: var(--white);
+}
+
+.service_container .section_description {
+    max-width: 600px;
+    margin-inline: auto;
+    color: var(--extra-light);
+}
+
+.service_grid {
+    margin-top: 60px;
+    display: grid;
+    gap: 30px;
+}
+
+.service_card {
+    text-align: center; 
+}
+
+.service_card h4 {
+    position: relative;
+    isolation: isolate; 
+    margin-bottom: 15px; 
+    padding-bottom: 15px; 
+    font-size: 22px; 
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.service_card h4::after {
+    position: absolute;
+    content: "~";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    line-height: 0;
+}
+
+.service_card p {
+    color: var(--extra-light);
+    line-height: 30px;
+}
+
+@media (width > 540px) {
+    .portfolio_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
