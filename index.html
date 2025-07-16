@@ -8,6 +8,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     </head>
     <body id="body">
         <header class="header">
@@ -23,13 +24,15 @@
                     </div>
                 </div>
                 <ul class="nav_links" id="nav-links">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#service">SERVICES</a></li>
+                    <div class="sections">
+                    <div><li><a href="#home">HOME</a></li></div>
+                    <div><li><a href="#about">ABOUT</a></li></div>
+                    <div><li><a href="#service">SERVICES</a></li></div>
                     <div id="logo_between"></div>
-                    <li><a href="#client">CLIENTS</a></li>
-                    <li><a href="#accomplisments">ACCOMPLISMENTS</a></li>
-                    <li><a href="#contact">CONTACT US</a></li>
+                    <div><li><a href="#client">CLIENTS</a></li></div>
+                    <div><li><a href="#accomplisments">ACCOMPLISMENTS</a></li></div>
+                    <div><li><a href="#contact">CONTACT US</a></li></div>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -38,10 +41,155 @@
             <h2 class="section_header">CAPTURING THE BEAUTY OF THE WORLD THROUGH PHOTOGRAPHY</h2>
             <p class="section_description">Hello, my name is Keira Pereira, a 17-year-old widlife and landscape photographer with a passion for capturing
                 the beauty of the world through photography. With every shot, I aim to reveal the raw, simplistic beauty of nature-- whether it's the quiet
-                grace of a wild animal or the striking stillness of a distant landscape. Through my lens, I invite you to see the world differently-- one
-                frame at a time.</p>
+                grace of a wild animal or the striking stillness of a distant landscape. 
+            </p>
+            <p class="section_description">My work is driven by a deep respect for the natural world and a desire to share its unique moments with others.
+                From serene forests to sweening mountain ranges, I strive to tell visual stories that inspire connection, curiosity, and appreciation for
+                our planet. Through my lens, I invite you to see the world differently-- one
+                frame at a time.
+            </p>
+            <img src="assets/camera 2.jpg"/>
         </div>
 
+        <div class="section_container portfolio_container">
+            <h2 class="section_header">~ PORTFOLIO ~</h2>
+            <div class="portfolio_grid">
+                <div class="portfolio_card">
+                    <img class="portfolio-img" src="assets/Peacock - Competition.jpg"/>
+                    <div class="portfolio_content">
+                    <button class="btn">VIEW PORTFOLIO</button>
+                    </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img class="portfolio-img" src="assets/Peacock - Competition.jpg"/>
+                        <div class="portfolio_content">
+                        <button class="btn">VIEW PORTFOLIO</button>
+                    </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img class="portfolio-img" src="assets/Peacock - Competition.jpg"/>
+                        <div class="portfolio_content">
+                        <button class="btn">VIEW PORTFOLIO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="service">
+            <div class="section_container service_container">
+                <h2 class="section_header">~ PURCHASING ~</h2>
+                <p class="section_description">
+                    My work is available for purchase upon contact. I offer professional, high quality
+                    prints of all my photography so you are able to light up your rooms and work spaces
+                    with beautiful, colourful pieces of photography from around the world. 
+                </p>
+                <div class="service_grid">
+                    <div class="service_card">
+                        <h4>Canvas Prints</h4>
+                        <p>
+                            Our canvas prints are designed to showcase the intricate vibrance and detail of our
+                            photos while maintaining the colour quality and offering a painterly, textured look. Canvas
+                            prints are known for their durability and are lightweight while providing zero glare. 
+                        </p>
+                    </div>
+                    <div class="service_card">
+                        <h4>Metal Prints</h4>
+                        <p>
+                            Our metal prints provide a modern and vibrant display. This print captures perfectly
+                            the depth and colour of our photos, adding a pop of luminous colour to any space.
+                            These prints offer incredible detail, enhanced visual impact, and exceptional durability. 
+                            They are resitant to fading, moisture, and UV damage. 
+                        </p>
+                    </div>
+                    <div class="service_card">
+                        <h4>Acrylic Prints</h4>
+                        <p>
+                            Our acrylic prints produce a sleek and contemporary look. The acrylic provides a glossy, glass-like finish 
+                            which intensifies color. These prints supply excellent clarity and color saturation. In addition to this, they 
+                            are durable, resistant to scratches, fading and UV damage.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_container client_container">
+            <h2 class="section_header">~ TESTIMONIALS ~</h2>
+            <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="client_card">
+            <img src="assets/Peacock - Competition.jpg"/>
+            <p>
+                Paste your testimonial here. For example: Keira
+                Pereira provided an excellent and professional
+                service at a local event commemorating veterans
+                ...etc.
+            </p>
+            <h4>Music for Veterans Project</h4>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="client_card">
+            <img src="assets/Peacock - Competition.jpg"/>
+            <p>
+                Keira Pereira's wildlife photography was
+                exceptional and brought light to our Hotel
+                website. We are very happy with her service.
+            </p>
+            <h4>Costa Rica Hotel</h4>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="client_card">
+            <img src="assets/Peacock - Competition.jpg"/>
+            <p>
+                Paste your testimonial here. For example: Keira
+                Pereira provided an excellent and professional
+                service at a local event commemorating veterans
+                ...etc.
+            </p>
+            <h4>Music for Veterans Project</h4>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+    </section>
+
+    <section class="section_container gallery_container">
+        <h2 class="section_header">~ GALLERY ~</h2>
+        <div class="gallery_grid">
+            <img src="assets/Peacock - Competition.jpg "/>
+            <img src="assets/Peacock - Competition.jpg "/>
+            <img src="assets/Peacock - Competition.jpg "/>
+            <img src="assets/Peacock - Competition.jpg "/>
+            <img src="assets/Peacock - Competition.jpg "/>
+            <img src="assets/Peacock - Competition.jpg "/>
+            <img src="assets/Peacock - Competition.jpg "/>
+            <img src="assets/Peacock - Competition.jpg "/>
+        </div>
+        <div class="gallery_btn">
+            <button class="btn">VIEW GALLERY</button>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="section_container blog_container">
+            <div class="blog-content">
+
+            </div>
+        </div>
+    </section>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
